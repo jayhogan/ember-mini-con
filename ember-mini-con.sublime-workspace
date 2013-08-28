@@ -1,0 +1,434 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dev",
+				"deviceDisabledEditContent"
+			],
+			[
+				"selected",
+				"selectedMarker"
+			],
+			[
+				"fl",
+				"floor_id"
+			],
+			[
+				"_onTouch",
+				"_onTouchEnd"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 3120,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jhogan/Library/Application Support/Sublime Text 2/Packages/User/posts-template.sublime-snippet",
+			"settings":
+			{
+				"buffer_size": 768,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jhogan/Library/Application Support/Sublime Text 2/Packages/User/posts-index-template.sublime-snippet",
+			"settings":
+			{
+				"buffer_size": 509,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/libs/ember-data-latest.js",
+			"settings":
+			{
+				"buffer_size": 282724,
+				"line_ending": "Unix",
+				"name": "// Version: v0.13-95-g4764b5d"
+			}
+		},
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 34,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 187.0,
+		"selected_items":
+		[
+			[
+				"make",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"mak",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pc",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jhogan/Downloads/showdown-master/compressed/showdown.js",
+		"/Users/jhogan/dev/ember-mini-con/js/libs/moment.js",
+		"/Users/jhogan/Library/Application Support/Sublime Text 2/Packages/User/func.sublime-snippet",
+		"/Users/jhogan/dev/hh2/app/assets/javascripts/geoserver_map.js.erb",
+		"/Users/jhogan/dev/gedt/js/leaflet-src.js",
+		"/Users/jhogan/dev/gedt/index.html",
+		"/Users/jhogan/dev/gedt/css/app.css",
+		"/Users/jhogan/dev/gedt/js/app.js",
+		"/Users/jhogan/dev/gedt/js/TouchDraw.Rectangle.js",
+		"/Users/jhogan/dev/gedt/css/bootstrap.css",
+		"/Users/jhogan/dev/gedt/js/TouchDraw.Polyline.js",
+		"/Users/jhogan/dev/gedt/js/TouchDraw.Feature.js",
+		"/Users/jhogan/dev/gedt/js/TouchDraw.Polygon.js",
+		"/Users/jhogan/Desktop/bootstrap/js/bootstrap.js",
+		"/Users/jhogan/dev/gedt/server.sh",
+		"/Users/jhogan/dev/hh2/app/assets/javascripts/geoserver_rendering.js",
+		"/Users/jhogan/dev/hh2/app/views/device_locations/update.js.erb",
+		"/Users/jhogan/dev/hh2/app/models/device_location.rb",
+		"/Users/jhogan/dev/hh2/app/controllers/device_locations_controller.rb",
+		"/Users/jhogan/dev/hh2/app/controllers/dispensers_controller.rb",
+		"/Users/jhogan/dev/hh2/app/views/geoservers/index.html.erb",
+		"/Users/jhogan/dev/hh2/app/controllers/mobile_observations_controller.rb",
+		"/Users/jhogan/dev/hh2/db/seeds.rb",
+		"/Users/jhogan/dev/hh2/app/controllers/geoservers_controller.rb",
+		"/Users/jhogan/dev/hh2/app/views/device_locations/destroy.js.erb",
+		"/Users/jhogan/dev/hh2/app/controllers/regions_controller.rb",
+		"/Users/jhogan/dev/hh2/app/uploaders/floor_plan_uploader.rb",
+		"/Users/jhogan/dev/hh2/app/views/layouts/geoservers.html.erb",
+		"/Users/jhogan/dev/hh2/app/views/layouts/application.html.erb",
+		"/Users/jhogan/.zshrc",
+		"/Users/jhogan/dev/gedt/server.py",
+		"/Users/jhogan/dev/gedt/.gitignore",
+		"/Users/jhogan/.ssh/config",
+		"/Users/jhogan/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/jhogan/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Users/jhogan/dev/hh2/.gitignore",
+		"/Users/jhogan/Library/Application Support/Sublime Text 2/Packages/RubyTest/RubyTest.sublime-settings",
+		"/Users/jhogan/dev/hh2/spec/controllers/activations_controller_spec.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/jhogan/dev/hh2/app"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"disable",
+			"img",
+			"title",
+			"@",
+			"@shape",
+			"@device_types",
+			"@regions",
+			"attachClick",
+			"displayDevice",
+			"updateMarkerPo",
+			"drag",
+			"attachDeviceHandlers",
+			"Device",
+			"markerClickHandler",
+			"updateDEvice",
+			"selectedMarker",
+			"DeviceType",
+			"Device.",
+			"todo",
+			"newLat",
+			"_clearHi",
+			"tooltip",
+			"_tooltip",
+			"L.Draw",
+			"TouchRectangle",
+			"url",
+			"raw ",
+			"raw"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 3120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2698,
+								2698
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 432.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/jhogan/Library/Application Support/Sublime Text 2/Packages/User/posts-template.sublime-snippet",
+					"settings":
+					{
+						"buffer_size": 768,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								480,
+								132
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/jhogan/Library/Application Support/Sublime Text 2/Packages/User/posts-index-template.sublime-snippet",
+					"settings":
+					{
+						"buffer_size": 509,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/libs/ember-data-latest.js",
+					"settings":
+					{
+						"buffer_size": 282724,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								282724,
+								282724
+							]
+						],
+						"settings":
+						{
+							"auto_name": "// Version: v0.13-95-g4764b5d",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 150289.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/app.js",
+					"settings":
+					{
+						"buffer_size": 34,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34,
+								34
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"geo",
+				"app/assets/javascripts/geoserver_map.js.erb"
+			],
+			[
+				"device_lo",
+				"app/controllers/device_locations_controller.rb"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true
+}

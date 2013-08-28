@@ -1,0 +1,164 @@
+Notes
+=====
+Agenda
+ - Overview of Ember
+ - Code example: Port the Thinking Forward blog to Ember
+ - Tooling
+ - Summary
+
+Overview
+ - Concepts
+  - build ambitiously large web applications that are competitive with native apps.
+  - the web derives its power from the ability to bookmark and share URLs.
+  - MVC
+  - opinionated
+  - convention-based
+
+Code Example
+ - Step 0 -  Starting off with Ember starter kit with tweaks
+  - Twitter.css
+  - showdown.js
+  - moment.js
+
+ - Step 1 - Create an App
+  - App = Ember.Application.create()
+   - Namespace
+   - Event Listener
+   - Router -> routing
+  - Refresh the page and see nothing
+  - Add the application template(Snippet: step1)
+   - A template, written in the Handlebars templating language, describes the user interface of your application. Each template is backed by a model, and the template automatically updates itself if the model changes.
+   - Plain HTML wrapped in a script tag with a special type
+  - Refresh the page and see that Ember has rendered this template to the page
+
+ - Step 2 - The About route
+  - Create a router (Snippet: router)
+   - The router translates a URL into a series of nested templates, each backed by a model. As the templates or models being shown to the user change, Ember automatically keeps the URL in the browser's address bar up-to-date.
+  - Create about template (Snippet: about_template)
+  - Highlight convention of template id and route name
+  - Refresh page and nothing happens.
+  - Add #/about to url and still nothing happens
+  - Add {{outlet}} to main application template
+   - Outlets are placeholders for template rendering
+  - Refresh the page and see the about content
+  - Add {{#linkTo 'about' }} helper
+  - Click the link
+   - renders content
+   - Updates the url
+   - Adds the active class (bold)
+
+ - Step 3 - Posts (Getting data from the server)
+  - 3a - Ember data
+   - Define a store (Snippet: store)
+    - The store is the repository that holds loaded models, and is responsible for retrieving models that have not yet been loaded.
+    - Using the FixtureAdapter store for now
+   - Define a model (Snippet: post_model)
+    - A model is an object that stores persistent state.
+    - App.Post
+   - Fixture data (Snippet: post_fixture)
+  - 3b - Displaying static content
+   - Define Posts resource
+    - Router:  this.resource('posts');
+   - Define Posts template (Snippet: posts_template)
+   - Change posts link in navbar to use {{linkTo 'posts'}}
+   - Refresh the page and click posts and you should see static content
+  - 3c - Display the fixture data
+   - Use the handlebars each helper to iterate over the posts (wrap <tr><td>)
+    - {{#each model}}....{{/each}}
+   - Replace Title and Author with {{title}} and {{author}}
+   - Refresh the page, click Posts - nothing is displayed
+    - We haven't told Ember what model to use for the template
+  - 3d - Create a Route
+   - A route is an object that tells the template which model it should display.
+   - App.PostsRoute (Snippet: posts_route)
+
+ - Step 4 - Display post detail
+  - When clicking post link, display contents of the post on the right.
+  - 4a - Create a nested route (works with the URL)
+   - Add function() argument to 'posts' resource definition
+   	- function() {
+   		this.resource('post', { path: ':post_id' })
+   	}
+   	- It includes a dynamic segment
+  - 4b - Define the post template
+   - Snippet: post_template
+   - Add linkTo helper to posts template
+    - {{linkTo 'post' this}}...{{/linkTo}}
+    - Refresh..hover over link and see the url...click and nothing happens. Why not?
+   - Add {{outlet}} inside "span9" of posts template
+    - Refresh the page
+    - Click the link
+    - Look at the url
+
+ - Step 4 - Handlebar helpers
+  - Fix the ugly date with moment.js
+  - 4a - Create the date helper (Snippet: date_helper)
+   - Add it to the template everywhere that we are using
+   - Refresh that page and voila!
+   - Bound helper = Update the date in dev tools
+    - App.Post.find(1).set('publishedAt', new Date())
+  - 4b - Format the contents of the posts as Markdown (Snippet: markdown_helper)
+   - Ember templates escape html by default so we have to use SafeString
+   - Add it to intro and extended
+   - Refresh the page
+
+ - Step 5 - CRUD
+  - 5a - Add edit mode content to the post template
+   - Snippet: post_edit_template
+   - #if helper
+   - action helper - triggers events (controller -> route)
+  - 5b - PostController
+   - A controller is an object that stores application state. A template can optionally have a controller in addition to a model, and can retrieve properties from both.
+   - Named functions to handle actions
+   - Notice the "set" functions - this is for binding
+  - 5c - Editing UI
+   - Create a partial (Snippet: posts_edit_partial)
+   - Use partial helper to include content {{partial 'post/edit'}}
+   - Show that edit works
+
+ - Step 6 - Loose ends
+  - 6a - Nothing is displayed when Posts clicked
+   - Posts index (Snippet: posts_index_template)
+  - 6b - On app initial load, show posts
+   - Explicitly create IndexRoute that redirects to posts
+    - Snippet: index_route
+
+ - Step 7 - Get the data from a server
+  - Delete the fixture data
+  - Change store to use DS.RESTAdapter
+   - adapter: DS.RESTAdapter.extend({
+      url: 'http://localhost:3000'
+     })
+  - Serve the app
+
+ - Step 8 - Implement save
+  - In doneEditing:
+   - this.get('store').commit();
+
+Tooling
+ - Ember tools
+ - Yeoman
+
+Summary
+ - Ember vs ASP MVC
+  - Application = global.asax
+  - Router = Routes
+  - Route = Controller
+  - Controller = View Model
+  - Template = Razor view
+  - Helper = Helper
+  - View = Helper/Razor Partial
+ - Tooling
+  - Ember extension for chrome: https://github.com/tildeio/ember-extension
+  - Ember Tools - https://github.com/rpflorence/ember-tools
+  - Yeoman - http://yeoman.io/
+  - Yeoman Ember - https://github.com/yeoman/generator-ember
+
+
+
+
+
+
+
+
+
