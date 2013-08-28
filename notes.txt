@@ -113,6 +113,9 @@ Code Example
    - Notice the "set" functions - this is for binding
   - 5c - Editing UI
    - Create a partial (Snippet: posts_edit_partial)
+    - View
+     - Need advanced user event handling
+     - Re-usable component
    - Use partial helper to include content {{partial 'post/edit'}}
    - Show that edit works
 
@@ -136,8 +139,51 @@ Code Example
    - this.get('store').commit();
 
 Tooling
+ - Ember Chrome Plugin
+  - 
  - Ember tools
+  - About
+   - node-based tool
+   - file organization conventions
+   - scaffolding (rudimentary)
+   - template precompilation for performance
+   - single file application build for convenience
+   - generators for faster application development
+   - commonjs (node-style) modules
+  - Demo
+   - ember create ember-tools-client
+   - ember generate --scaffold person name:string age:number
+   - ember build
+   - open index.html
+   - visit #/people
+  - Pros
+   - Just ember
+   - Under active development
+   - Simple
+  - Cons
+   - Just generate and build (no testing, http server, sass/compass)
+   - Scaffolding sucks
+   - Not designed for pluggability
  - Yeoman
+  - About
+   - a collection of tools and best practices working in harmony to make developing for the web even better.
+   - Node
+   - Yo - Scaffolds
+   - Grunt - Task-based build tool
+   - Bower - dependency management for the web
+   - Ember Generator
+  - Demo
+   - mkdir yeoman-client
+   - cd yeoman-client
+   - yo ember
+   - grunt server
+   - grunt test
+  - Pros
+   - Generic framework
+   - Well-supported
+   - Pluggable
+  - Cons
+   - More complicated
 
 Summary
  - Ember vs ASP MVC
