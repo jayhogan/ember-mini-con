@@ -1,18 +1,5 @@
 Notes
 =====
-Agenda
- - Overview of Ember
- - Code example: Port the Thinking Forward blog to Ember
- - Tooling
- - Summary
-
-Overview
- - Concepts
-  - build ambitiously large web applications that are competitive with native apps.
-  - the web derives its power from the ability to bookmark and share URLs.
-  - MVC
-  - opinionated
-  - convention-based
 
 Code Example
  - Step 0 -  Starting off with Ember starter kit with tweaks
@@ -90,28 +77,28 @@ Code Example
     - Click the link
     - Look at the url
 
- - Step 4 - Handlebar helpers
+ - Step 5 - Handlebar helpers
   - Fix the ugly date with moment.js
-  - 4a - Create the date helper (Snippet: date_helper)
+  - 5a - Create the date helper (Snippet: date_helper)
    - Add it to the template everywhere that we are using
    - Refresh that page and voila!
    - Bound helper = Update the date in dev tools
     - App.Post.find(1).set('publishedAt', new Date())
-  - 4b - Format the contents of the posts as Markdown (Snippet: markdown_helper)
+  - 5b - Format the contents of the posts as Markdown (Snippet: markdown_helper)
    - Ember templates escape html by default so we have to use SafeString
    - Add it to intro and extended
    - Refresh the page
 
- - Step 5 - CRUD
-  - 5a - Add edit mode content to the post template
+ - Step 6 - CRUD
+  - 6a - Add edit mode content to the post template
    - Snippet: post_edit_template
    - #if helper
    - action helper - triggers events (controller -> route)
-  - 5b - PostController
+  - 6b - PostController
    - A controller is an object that stores application state. A template can optionally have a controller in addition to a model, and can retrieve properties from both.
    - Named functions to handle actions
    - Notice the "set" functions - this is for binding
-  - 5c - Editing UI
+  - 6c - Editing UI
    - Create a partial (Snippet: posts_edit_partial)
     - View
      - Need advanced user event handling
@@ -119,14 +106,14 @@ Code Example
    - Use partial helper to include content {{partial 'post/edit'}}
    - Show that edit works
 
- - Step 6 - Loose ends
-  - 6a - Nothing is displayed when Posts clicked
+ - Step 7 - Loose ends
+  - 7a - Nothing is displayed when Posts clicked
    - Posts index (Snippet: posts_index_template)
-  - 6b - On app initial load, show posts
+  - 7b - On app initial load, show posts
    - Explicitly create IndexRoute that redirects to posts
     - Snippet: index_route
 
- - Step 7 - Get the data from a server
+ - Step 8 - Get the data from a server
   - Delete the fixture data
   - Change store to use DS.RESTAdapter
    - adapter: DS.RESTAdapter.extend({
@@ -134,7 +121,7 @@ Code Example
      })
   - Serve the app
 
- - Step 8 - Implement save
+ - Step 9 - Implement save
   - In doneEditing:
    - this.get('store').commit();
 
@@ -184,27 +171,3 @@ Tooling
    - Pluggable
   - Cons
    - More complicated
-
-Summary
- - Ember vs ASP MVC
-  - Application = global.asax
-  - Router = Routes
-  - Route = Controller
-  - Controller = View Model
-  - Template = Razor view
-  - Helper = Helper
-  - View = Helper/Razor Partial
- - Tooling
-  - Ember extension for chrome: https://github.com/tildeio/ember-extension
-  - Ember Tools - https://github.com/rpflorence/ember-tools
-  - Yeoman - http://yeoman.io/
-  - Yeoman Ember - https://github.com/yeoman/generator-ember
-
-
-
-
-
-
-
-
-
