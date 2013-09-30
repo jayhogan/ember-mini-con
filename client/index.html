@@ -13,8 +13,8 @@
       <div class="navbar-inner">
         <a class="brand" href="#">Thinking Forward</a>
         <ul class="nav">
-          <li>{{#linkTo 'posts'}}Posts{{/linkTo}}</li>
-          <li>{{#linkTo 'about'}}About{{/linkTo}}</li>
+          <li>{{#link-to 'posts'}}Posts{{/link-to}}</li>
+          <li>{{#link-to 'about'}}About{{/link-to}}</li>
         </ul>
       </div>
     </div>
@@ -36,7 +36,7 @@
             </thead>
             {{#each model}}
             <tr><td>
-              {{#linkTo 'post' this}}{{title}} <small class="muted">by {{author}}</small>{{/linkTo}}
+              {{#link-to 'post' this}}{{title}} <small class="muted">by {{author}}</small>{{/link-to}}
             </td></tr>
             {{/each}}
           </table>
