@@ -23,7 +23,7 @@ App.Post = DS.Model.extend({
   author: DS.attr('string'),
   intro: DS.attr('string'),
   extended: DS.attr('string'),
-  publishedAt: DS.attr('date')
+  published: DS.attr('date')
 });
 
 App.IndexRoute = Ember.Route.extend({
