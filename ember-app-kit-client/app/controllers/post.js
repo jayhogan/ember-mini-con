@@ -1,5 +1,3 @@
-// Controllers serve as a proxy to the model to handle display specific
-// properties and actions (events). You could consider them view models. 
 var PostController = Ember.ObjectController.extend({
   isEditing: false,
 

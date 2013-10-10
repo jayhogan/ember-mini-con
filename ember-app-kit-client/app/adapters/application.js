@@ -1,4 +1,4 @@
-var FixtureAdapter = DS.RESTAdapter.extend({
+var RestAdapter = DS.RESTAdapter.extend({
   host: 'http://localhost:3000'
 });
-export default FixtureAdapter;
+export default RestAdapter;
